@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="/Javascript_class2/CALCULATOR/style.css">
+</head>
+<body>
+    <form class="form"  onsubmit="calculateAge(event)">   
+    <div class="calculator-container">
+    <h1>Age Calculator</h1>
+
+   
+          
+    <input type="number" id="birth-year" placeholder="Year" required>
+    <input type="number" id="birth-month" placeholder="Month" required>
+    <input type="number" id="birth-day" placeholder="Day" required></br>
+    <button type="submit">SUBMIT</button>
+    
+        <div id="result"></div>
+
+        <p id="output-form" style="display: none;"></p>
+
+        </div>
+        
+    <script > 
+    
+    
+        function calculateAge(event) {
+            event.preventDefault();
+        
+            var birthYear = parseInt(document.getElementById("birth-year").value);
+            var birthMonth = parseInt(document.getElementById("birth-month").value);
+            var birthDay = parseInt(document.getElementById("birth-day").value);
+        
+            var today = new Date();
+            var currentYear = today.getFullYear();
+            var currentMonth = today.getMonth() + 1; 
+            var currentDay = today.getDate();
+        
+            var ageYears = currentYear - birthYear;
+            var ageMonths = currentMonth - birthMonth;
+            var ageDays = currentDay - birthDay;
+        
+            var resultElement = document.getElementById("result");
+            resultElement.innerHTML = "Your age is: " + ageYears + " years, " + ageMonths + " months, " + ageDays + " days.";
+        
+            // Display output form
+            var outputForm = document.getElementById("output-form");
+            outputForm.style.display = "block";
+        
+          
+        }
+    
+    </script>
+</body>
+</html>

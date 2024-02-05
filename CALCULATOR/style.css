@@ -14,7 +14,8 @@ body {
    
 }
 .form{
-   width: 460px;
+    width: 460px;
+    padding: 12px;
     margin:  50px auto;
     background: whitesmoke;
     border-radius: 0px;
@@ -28,8 +29,10 @@ body {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+
     color:rgb(10, 10, 94);
     background: white;
+    m
     
     
 }

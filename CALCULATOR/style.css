@@ -32,19 +32,18 @@ body {
 
     color:rgb(10, 10, 94);
     background: white;
-    m
+    
     
     
 }
 
 input {
     width: 20%;
-    padding: 8px;
-    margin: 0px ;
+    padding:8px;
+    margin:0px ;
     box-sizing: border-box;
-
-    color:#3a7be3;
     justify-content: space-between;
+    color:#3a7be3;
 }
 
 

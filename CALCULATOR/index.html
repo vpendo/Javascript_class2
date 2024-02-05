@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="/Javascript_class2/CALCULATOR/style.css">
 </head>
 <body>
-    <form  onsubmit="calculateAge(event)">   
+    <form class="form" onsubmit="calculateAge(event)">   
     <div class="calculator-container">
-    <h1>Age Calculator</h1>
+    <h1 class="haed">Age Calculator</h1>
 
    
-          
-    <input type="number" id="birth-year" placeholder="Year" required>
-    <input type="number" id="birth-month" placeholder="Month" required>
-    <input type="number" id="birth-day" placeholder="Day" required></br>
+    <label >Year</label>  
+    <input type="number" id="birth-year"  required>
+    <labe >Month</labe>
+    <input type="number" id="birth-month"  required>
+    <label >Date</label>
+    <input type="number" id="birth-day"required>
     <button type="submit">SUBMIT</button>
     
         <div id="result"></div>
